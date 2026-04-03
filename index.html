@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Missing Player | Roblox Movie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Orbitron:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <header class="hero section" id="top">
+      <div class="panel hero-panel">
+        <p class="eyebrow">Roblox Movie Event</p>
+        <h1 class="title">THE MISSING PLAYER</h1>
+        <p class="subtitle">He never left the game...</p>
+        <a class="btn btn-primary" href="#casting">Join The Movie</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section trailer" id="trailer">
+        <div class="panel">
+          <h2>Trailer Drop</h2>
+          <div class="trailer-box" role="img" aria-label="Trailer preview for The Missing Player">
+            <div class="scanline"></div>
+            <p>Incoming Signal...</p>
+          </div>
+          <button class="btn btn-secondary" type="button">Watch Trailer</button>
+        </div>
+      </section>
+
+      <section class="section story" id="story">
+        <div class="panel fade-in">
+          <h2>Story</h2>
+          <p>
+            A player disappeared… but their avatar is still online. Strange messages appear.
+            Something is controlling the game.
+          </p>
+        </div>
+      </section>
+
+      <section class="section casting" id="casting">
+        <div class="panel">
+          <h2>Casting Form</h2>
+          <form class="casting-form" novalidate>
+            <label>
+              Roblox Username
+              <input type="text" name="username" placeholder="Enter your Roblox username" required />
+            </label>
+
+            <label>
+              Age
+              <input type="number" name="age" placeholder="Your age" min="8" max="99" required />
+            </label>
+
+            <label>
+              Role
+              <select name="role" required>
+                <option value="">Select a role</option>
+                <option>Main</option>
+                <option>Villain</option>
+                <option>Friend</option>
+                <option>Extra</option>
+              </select>
+            </label>
+
+            <label>
+              Why should we pick you?
+              <textarea name="pitch" rows="4" placeholder="Tell us what makes you perfect for this movie" required></textarea>
+            </label>
+
+            <label>
+              Availability
+              <input type="text" name="availability" placeholder="Weekdays, weekends, timezone..." required />
+            </label>
+
+            <button class="btn btn-primary" type="submit">Submit Application</button>
+            <p class="form-note">Selected players will be contacted</p>
+            <p class="form-response" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section mystery" id="mystery">
+        <div class="panel">
+          <p class="glitch" data-text="HE IS WATCHING">HE IS WATCHING</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Roblox Movie Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
