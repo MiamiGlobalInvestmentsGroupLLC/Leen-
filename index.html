@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Questions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page" aria-labelledby="quiz-title">
+      <section class="quiz-card" aria-live="polite">
+        <p class="badge">Quick Questions</p>
+
+        <header class="hero">
+          <h1 id="quiz-title">Answer these 2 quick questions</h1>
+          <p class="subtitle">
+            This takes just a moment. Tap your answers and we’ll guide you to the
+            next step.
+          </p>
+        </header>
+
+        <section class="progress-wrap" aria-label="Quiz progress">
+          <div
+            class="progress-circle"
+            role="progressbar"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"
+          >
+            <svg viewBox="0 0 120 120" class="progress-svg" aria-hidden="true">
+              <circle class="track" cx="60" cy="60" r="52"></circle>
+              <circle class="indicator" cx="60" cy="60" r="52"></circle>
+            </svg>
+            <div class="progress-center">
+              <span class="progress-value" id="progress-value">0%</span>
+              <span class="progress-label">Complete</span>
+            </div>
+          </div>
+        </section>
+
+        <p class="step" id="step-text">Step 1 of 2</p>
+
+        <section id="content" class="content" aria-live="polite"></section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
